@@ -228,3 +228,5 @@ Notice at the top of the React version, we're using a library called `isomorphic
 1. We can tuck all that functionality in a function and re-use it as much as we need in a user-friendly way
 2. The `fetch` API will become part of browsers. Soon we won't even need to load the library to get the function
 3. jQuery stinks!? Nah, but it's bulky, and if we're only using it to make AJAX calls, we can do better :)
+
+Since `fetch` is a bit barebones, notice we also had to create our own `serialize` function: it takes an object, iterates over its keys and outputs a string of `key1=value1&key2=value2...` in [URL-encoded format](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent)
